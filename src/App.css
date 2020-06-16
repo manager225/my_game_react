@@ -1,0 +1,8 @@
+body {
+  background-color: #eee;
+  font-family: 'Knewave', cursive;
+}
+
+div:focus {
+  outline: none!important;
+}
