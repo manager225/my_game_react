@@ -2,7 +2,30 @@
     width: 125px;
     height: 125px;
     border-radius: 3px;
-    background-color: aquamarine;
+}
+
+i {
+    color: darkorange;
+}
+
+.front {
+    width: 125px;
+    height: 125px;
+    background-color: #2B2B2B;
+}
+
+.back {
+    width: 125px;
+    height: 125px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #3C3F41;
+}
+
+.ReactFlipCard {
+    width: 100%;
+    height: 100%;
 }
 
 

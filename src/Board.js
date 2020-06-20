@@ -4,14 +4,19 @@ import './Board.css'
 
 export default class Board extends Component{
     render() {
-        const cards = [1,2,3,4];
         return (
             <div className="board">
                 {
-                  cards.map((card) =>
-                     <Cards>
-
-                     </Cards>)
+                  this.props.deckCards.map((card, index) => {
+                      const nowInComparison = this.props.cardSelected.indexOf(card) > -1;
+                      return <Cards
+                          key={index}
+                          icon={card.icon}
+                          nowInComparison={nowInComparison}
+                          selectCard={() => this.props.selectCard(card)}
+                          wasGuessed={card.wasGuessed}
+                      />
+                  })
                 }
             </div>
         );
